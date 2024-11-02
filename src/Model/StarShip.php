@@ -7,6 +7,7 @@ class StarShip
     public function __construct(
         private int $id,
         private string $name,
+        private string $class,
         private string $model,
         private string $captain
 
@@ -80,6 +81,24 @@ class StarShip
     public function setCaptain(string $captain): self
     {
         $this->captain = $captain;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of class
+     */
+    public function getClass(): string
+    {
+        return $this->class;
+    }
+
+    /**
+     * Set the value of class
+     */
+    public function setClass(string $class): self
+    {
+        $this->class = $class;
 
         return $this;
     }

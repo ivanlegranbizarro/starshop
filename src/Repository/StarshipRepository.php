@@ -9,9 +9,10 @@ class StarshipRepository
     public function findAll(): array
     {
         return [
-            new StarShip(1, 'Millennium Falcon', 'X-wing', 'Han Solo'),
-            new StarShip(2, 'X-Wing', 'X-wing', 'Luke Skywalker'),
-            new StarShip(3, 'TIE Defender', 'TIE', 'Han Solo'),
+            new StarShip(1, 'Millennium Falcon', 'X-wing', 'YT-1300', 'Han Solo'),
+            new StarShip(2, 'X-Wing', 'X-wing', 'T-65X', 'Leia Organa'),
+            new StarShip(3, 'TIE Advanced x1', 'TIE', 'TIE Advanced x1', 'Han Solo'),
+            new StarShip(4, 'TIE Silencer', 'TIE', 'TIE Silencer', 'Han Solo'),
         ];
     }
 
