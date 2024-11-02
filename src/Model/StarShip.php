@@ -9,7 +9,8 @@ class StarShip
         private string $name,
         private string $class,
         private string $model,
-        private string $captain
+        private string $captain,
+        private StarshipStatusEnum $status
 
     ) {}
 
@@ -99,6 +100,24 @@ class StarShip
     public function setClass(string $class): self
     {
         $this->class = $class;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of status
+     */
+    public function getStatus(): StarshipStatusEnum
+    {
+        return $this->status;
+    }
+
+    /**
+     * Set the value of status
+     */
+    public function setStatus(StarshipStatusEnum $status): self
+    {
+        $this->status = $status;
 
         return $this;
     }
