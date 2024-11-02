@@ -14,4 +14,9 @@ class StarshipRepository
             new StarShip(3, 'TIE Defender', 'TIE', 'Han Solo'),
         ];
     }
+
+    public function find(int $id): ?StarShip
+    {
+        return $this->findAll()[$id - 1] ?? null;
+    }
 }

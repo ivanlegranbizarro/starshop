@@ -8,7 +8,7 @@
   <h1>Starshop: your monopoly-busting option for Starship parts!</h1>
 
   <h2>Your ship is:</h2>
-  <p>{{ myShip.name }}</p>
+  <a href="{{ path('app_starship_show', { id: myShip.id }) }}"><p>{{ myShip.name }}</p></a>
   <p>{{ myShip.model }}</p>
   <p>{{ myShip.captain }}</p>
   <br />
