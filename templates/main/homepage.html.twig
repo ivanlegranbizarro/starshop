@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Starshop: Beam up some parts!
+{% endblock %}
+
+{% block body %}
+  <h1>Starshop: your monopoly-busting option for Starship parts!</h1>
+
+  <h2>Your ship is:</h2>
+  <p>{{ myShip.name }}</p>
+  <p>{{ myShip.model }}</p>
+  <p>{{ myShip.captain }}</p>
+  <br />
+  <hr />
+  <br />
+  <h2>We have {{ ships|length }} starships</h2>
+{% endblock %}
